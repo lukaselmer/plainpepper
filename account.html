@@ -11,6 +11,18 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://code.highcharts.com/highcharts.js"></script>
 
+
+    <style>
+        .btn {
+            padding: 8px 10px;
+            margin: 4px;
+            border-radius: 3px;
+            cursor:pointer;
+            background: lightskyblue;
+            border: none;
+        }
+    </style>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -24,36 +36,13 @@
     </header>
     <section>
         <p>
-            Bitte melde dich an.
+            Herzlich willkommen. Bitte wähle eine Funktion:
         </p>
 
-        <form action="account.html" method="get">
-            <table>
-                <tr>
-                    <td style="text-align: right;">
-                        <label style="width: 200px;">Username</label>
-                    </td>
-                    <td><input/></td>
-                </tr>
-                <tr>
-                    <td style="text-align: right;">
-                        <label style="width: 200px;">Password</label>
-                    </td>
-                    <td><input type="password"/></td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td><input type="submit"/></td>
-                </tr>
-                <tr>
-                    <td>
-                    </td>
-                    <td><a href="#">Passwort vergessen?</a> | <a href="#">Neu registrieren</a></td>
-                </tr>
+        <button class="btn" onclick="window.location='show.html'">Aktuelle Kalenderwoche</button>
+        <br/>
+        <button class="btn" onclick="window.location='#'">Vorherige Kalenderwoche</button>
 
-            </table>
-        </form>
     </section>
     <footer>
         <p>This project is maintained by <a href="https://github.com/lukaselmer">lukaselmer</a></p>
