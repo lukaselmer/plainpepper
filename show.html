@@ -16,7 +16,7 @@
             padding: 8px 10px;
             margin: 4px;
             border-radius: 3px;
-            cursor:pointer;
+            cursor: pointer;
             background: lightskyblue;
             border: none;
         }
@@ -41,11 +41,13 @@
                     title: {
                         text: 'Nutungszeit in Stunden'
                     },
-                    plotLines: [{
-                        value: 0,
-                        width: 1,
-                        color: '#808080'
-                    }]
+                    plotLines: [
+                        {
+                            value: 0,
+                            width: 1,
+                            color: '#808080'
+                        }
+                    ]
                 },
                 tooltip: {
                     valueSuffix: '°C'
@@ -56,14 +58,18 @@
                     verticalAlign: 'middle',
                     borderWidth: 0
                 },
-                series: [{
-                    name: 'Facebook',
-                    data: [0.5, 1.2, 1.5, 1.4, 2, 4.5, 6]
-                },
-                {
+                series: [
+                    {
+                        name: 'Facebook',
+                        data: [0.5, 1.2, 1.5, 1.4, 2, 4.5, 6]
+                    },
+                    {
                         name: 'Mail',
-                        data: [171, 96, 121, 130, 74, 70, 15].map(function(v){ return v/60;})
-                }]
+                        data: [171, 96, 121, 130, 74, 70, 15].map(function (v) {
+                            return v / 60;
+                        })
+                    }
+                ]
             });
         });
     </script>
@@ -74,7 +80,8 @@
 <body>
 <div class="wrapper">
     <header>
-        <div><img src="img/logo.png"/></div><br/>
+        <div><img src="img/logo.png"/></div>
+        <br/>
 
         <p>Startup Weekend Pitch Demo</p>
     </header>
@@ -96,7 +103,7 @@
         <p>Prototype by
 
         <div>
-            <a href="https://www.renuo.ch/"><img src="https://www.renuo.ch/images/logo.png" style="margin-top: -7px;"></a>
+            <a href="https://www.renuo.ch/"><img src="img/logo_renuo.png" style="margin-top: -7px;"></a>
         </div>
 
         <p>
